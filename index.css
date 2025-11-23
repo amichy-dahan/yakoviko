@@ -1,0 +1,601 @@
+body {
+     max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    background-image: url(26.jpg);
+    /* יישור הטקסט לימין */
+}
+.rtl{
+    direction: rtl;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(65, 143, 207);
+   
+}
+.high-contrast {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.high-contrast * {
+    color: #fff !important;
+    background-color: #000 !important;
+    border-color: #fff !important;
+}
+.clre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bloon{
+    font-size: 70px;
+}
+
+.testimonial-carousel {
+  width: 85%;
+  margin: 30px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.15); /* שקיפות */
+  backdrop-filter: blur(8px); /* טישטוש עדין ומושלם */
+  padding: 30px 20px;
+  border-radius: 20px;
+}
+
+.testimonial {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: none;
+  text-align: center;
+  color: #ff6200;
+  font-size: 1.2rem;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+button.prev-btn,
+button.next-btn {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  padding: 10px 15px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+button.prev-btn:hover,
+button.next-btn:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3.5rem;
+    color: #25D366;
+    z-index: 1000;
+    animation: float 2s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+/* כשהעכבר מעל האייקון */
+.whatsapp-icon:hover {
+    transform: scale(1.3);
+}
+
+/* האנימציה שמביאה את האייקון לגלים */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.accessibility-button {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  font-size: 2rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.div-d{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.phone-call{
+    
+font-size: 40px;
+ transition: font-size 0.3s ease-in-out;
+   font-size: 3vw;
+      font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #26ff04 10%, #23ad00 60%, #000000 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+   text-shadow:
+   2px 2px 3px rgba(0,0,0,0.25),   /* צל ראשון רך */
+    4px 4px 6px rgba(0,0,0,0.20),   /* צל קצת יותר עמוק */
+    6px 6px 12px rgba(0,0,0,0.15);  /* צל רחוק שנותן עומק */
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+.phone-call:hover{
+   font-size: 42px;
+}
+
+.accessibility-menu {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  left: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+.high-contrast {
+  background-color: black;
+  color: yellow;
+}
+.hamlzot{
+     font-size: 3vw;
+      font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #ff0000 10%, #ff0000 60%, #ff1100 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+   text-shadow:
+   2px 2px 3px rgba(0,0,0,0.25),   /* צל ראשון רך */
+    4px 4px 6px rgba(0,0,0,0.20),   /* צל קצת יותר עמוק */
+    6px 6px 12px rgba(0,0,0,0.15);  /* צל רחוק שנותן עומק */
+    margin: 0;
+    text-align: center;
+}
+
+.accessibility-menu button {
+  display: block;
+  margin: 5px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.box {
+ width: 100%;
+  position: relative;
+  text-align: center;
+  margin: 0 10px;
+  display: inline-block;
+    
+}
+
+/* הכותרת — מוסתרת בהתחלה */
+.box .img-text {
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none; /* שלא יחסום את העכבר */
+    font-size: 2.5vw;
+      font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #000000 0%, #00ffd5 50%, #00ff55 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow:
+    0 0 6px rgb(0, 21, 255),
+    0 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.6);
+    letter-spacing: 0px;
+}
+
+/* כשעוברים עם העכבר על התמונה → הכותרת מופיעה */
+.box:hover .img-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* כשעוברים עם העכבר על התמונה → היא גדלה */
+.box a:hover img {
+  transform: scale(1.06);
+  opacity: 0.6;
+}
+
+
+
+.dadCon {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.img1 {
+    width: 280px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px  rgb(255, 255, 255);
+   
+}
+
+.img2 {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+     box-shadow: 0 0 15px  rgb(255, 255, 255);
+  
+}
+
+.img3 {
+    width: 280px;
+    height: 270px;
+    border-radius: 50%;
+     box-shadow: 0 0 15px  rgb(255, 255, 255);
+   
+}
+
+.sun{
+    color: #fbff00;
+}
+
+
+
+.word-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+   /* font-family: 'Rubik Bubbles', cursive; */
+
+.balloon-text {
+    font-size: 10vw;
+      font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #ff0000 10%, #ff0101 60%, #ff0000 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow:
+        0 0 15px rgba(255, 0, 0, 0.8),
+        0 8px 18px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+.sec-title{
+    font-size: 3vw;
+      font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #ff0000 10%, #ff0000 60%, #ff1100 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+   text-shadow:
+   2px 2px 3px rgba(0,0,0,0.25),   /* צל ראשון רך */
+    4px 4px 6px rgba(0,0,0,0.20),   /* צל קצת יותר עמוק */
+    6px 6px 12px rgba(0,0,0,0.15);  /* צל רחוק שנותן עומק */
+    margin: 0;
+}
+
+.title-drama{
+ font-size: 5vw;
+      font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #ff0000 10%, #ff0000 60%, #ff1100 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+   text-shadow:
+   2px 2px 3px rgba(0,0,0,0.25),   /* צל ראשון רך */
+    4px 4px 6px rgba(0,0,0,0.20),   /* צל קצת יותר עמוק */
+    6px 6px 12px rgba(0,0,0,0.15);  /* צל רחוק שנותן עומק */
+    margin: auto;
+    text-align: center;
+}
+.end-t{
+    font-size: 3vw;
+      font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #ff0000 10%, #ff0000 60%, #ff1100 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+   text-shadow:
+   2px 2px 3px rgba(0,0,0,0.25),   /* צל ראשון רך */
+    4px 4px 6px rgba(0,0,0,0.20),   /* צל קצת יותר עמוק */
+    6px 6px 12px rgba(0,0,0,0.15);  /* צל רחוק שנותן עומק */
+    margin: auto;
+    text-align: center;
+}
+
+
+.details-drama{
+    text-align: center;
+    font-family: "Rubik Maps", sans-serif; 
+  font-size: 2rem;
+    color: rgba(250, 78, 78, 0.856);
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+    font-weight: 900;
+}
+a.a1, a.a2, a.a3 {
+  display: block;
+  text-decoration: none;
+  border-radius: 100px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a.a1:hover, a.a2:hover, a.a3:hover {
+  transform: scale(1.04);
+ 
+}
+/* 
+.img-text {
+  
+    right: 0;
+    position: absolute;
+    text-align: center;
+} */
+
+/* span סביב האות ו */
+.letter-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* הכדור בתוך האות */
+.letter-wrapper .ball {
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.25em;
+    height: 0.25em;
+    background: #6383e4;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 15px rgb(113, 134, 230);
+    animation: floatUp 2s ease-in-out infinite;
+}
+
+.letter-wrapper .ball2 {
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.25em;
+    height: 0.25em;
+    background: #ffd506;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 15px #ffba0a;
+    animation: floatUp 1s ease-in-out infinite;
+}
+.text-spacing {
+  line-height: 1.8 !important;
+  letter-spacing: 1px;
+}
+
+.grayscale-mode {
+  filter: grayscale(100%);
+}
+
+.accessibility-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 14px;
+  text-decoration: underline;
+  text-align: center;
+  color: #676767;
+}
+
+.accessibility-link:hover {
+  color: #000;
+}
+
+
+@keyframes floatUp {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-0.3em);
+    }
+}
+
+.image-marquee {
+    margin-top: 10px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px; /* גובה הרכבת */
+    border-radius: 20px;
+}
+
+.image-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 15s linear infinite; /* מהירות הריצה */
+    border-radius: 10px;
+}
+
+.image-track img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px; /* רווח בין התמונות */
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* גורם לרכבת לזוז שמאלה */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .balloon-text {
+        font-size: 14vw;
+        /* יותר גדול לטלפונים */
+    }
+
+    body {
+        max-width: 768px;
+    }
+
+    .box {
+        border-width: 0.8px;
+    }
+}
+
+/* למסכים קטנים (פלאפונים) */
+@media (max-width: 480px) {
+    body {
+        
+        width: 90%;
+    }
+    .img-text {
+    font-size: 6vw;
+    font-family: 'Playpen Sans Hebrew', cursive;
+    background: linear-gradient(180deg, #000000 0%, #00ffd5 50%, #00ff55 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+
+.bloon{
+    
+}
+
+
+.end-t{
+    font-size: 4vw;
+      font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #ff0000 10%, #ff0000 60%, #ff1100 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+   text-shadow:
+   2px 2px 3px rgba(0,0,0,0.25),   /* צל ראשון רך */
+    4px 4px 6px rgba(0,0,0,0.20),   /* צל קצת יותר עמוק */
+    6px 6px 12px rgba(0,0,0,0.15);  /* צל רחוק שנותן עומק */
+    margin: auto;
+    text-align: center;
+}
+
+.title-drama{
+ font-size: 8vw;
+      font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #ff0000 10%, #ff0000 60%, #ff1100 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+   text-shadow:
+   2px 2px 3px rgba(0,0,0,0.25),   /* צל ראשון רך */
+    4px 4px 6px rgba(0,0,0,0.20),   /* צל קצת יותר עמוק */
+    6px 6px 12px rgba(0,0,0,0.15);  /* צל רחוק שנותן עומק */
+    margin: auto;
+    text-align: center;
+}
+
+.phone-call{
+    
+font-size: 40px;
+ transition: font-size 0.3s ease-in-out;
+   font-size: 7vw;
+      font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #26ff04 10%, #23ad00 60%, #000000 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+   text-shadow:
+   2px 2px 3px rgba(0,0,0,0.25),   /* צל ראשון רך */
+    4px 4px 6px rgba(0,0,0,0.20),   /* צל קצת יותר עמוק */
+    6px 6px 12px rgba(0,0,0,0.15);  /* צל רחוק שנותן עומק */
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sec-title{
+    font-size: 7vw;
+      font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #ff0000 10%, #ff0000 60%, #ff1100 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+   text-shadow:
+   2px 2px 3px rgba(0,0,0,0.25),   /* צל ראשון רך */
+    4px 4px 6px rgba(0,0,0,0.20),   /* צל קצת יותר עמוק */
+    6px 6px 12px rgba(0,0,0,0.15);  /* צל רחוק שנותן עומק */
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+
+    .dadCon {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        margin-bottom: 10px;
+        
+    }
+
+    .img1 {
+        width: 200px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        box-shadow: 0 0 15px black;
+    }
+
+    .img2 {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        box-shadow: 0 0 15px black;
+    }
+
+    .img3 {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0 0 15px black;
+    }
+    
+
+    .balloon-text {
+        font-size: 22vw;
+        /* מתאים לכתיבה גדולה וברורה במסכים קטנים */
+    }
+}
+.focus-outline *:focus {
+  outline: 3px solid #ff9800 !important;
+}
+.highlight-links a {
+  text-decoration: underline !important;
+  border-bottom: 2px dashed #000 !important;
+}
