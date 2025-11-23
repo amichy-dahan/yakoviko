@@ -603,7 +603,7 @@ font-size: 40px;
         pointer-events: auto;
         font-size: 20px;
     
-    background: linear-gradient(180deg, #000000 0%, #00ffd5 50%, #00ff55 100%);
+    background: linear-gradient(180deg, #000dff 0%, #1900fd 50%, #0011ff 100%);
     -webkit-background-clip: text;
     color: transparent;
     text-shadow:
