@@ -467,6 +467,7 @@ a.a1:hover, a.a2:hover, a.a3:hover {
     .box {
         border-width: 0.8px;
     }
+    
 }
 
 /* למסכים קטנים (פלאפונים) */
@@ -603,7 +604,7 @@ font-size: 40px;
         pointer-events: auto;
         font-size: 20px;
     
-    background: linear-gradient(180deg, #000dff 0%, #1900fd 50%, #0011ff 100%);
+    background: linear-gradient(180deg, #0026ff 0%, #2a04e7 50%, #0613ff 100%);
     -webkit-background-clip: text;
     color: transparent;
     text-shadow:
