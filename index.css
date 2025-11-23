@@ -604,13 +604,11 @@ font-size: 40px;
         pointer-events: auto;
         font-size: 20px;
     
-    background: linear-gradient(180deg, #0026ff 0%, #2a04e7 50%, #0613ff 100%);
+    background: linear-gradient(180deg, #5f76fc 50%, #755aff 50%, #4e57fd 100%);
     -webkit-background-clip: text;
     color: transparent;
-    text-shadow:
-    0 0 6px rgb(0, 21, 255),
-    0 2px 4px rgba(0, 0, 0, 0.3);
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+  
+    -webkit-text-stroke: 0px rgba(255, 255, 255, 0.6);
     letter-spacing: 0px;
     }
 
