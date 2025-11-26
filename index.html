@@ -47,6 +47,18 @@
         <img src="16.jpeg" alt="תמונה 13">
     </div>
 </div> -->
+
+<div class="container">
+    <!-- כל התוכן שלך -->
+  <div class="mini-menu">
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    
+  <div class="menu-content" id="menuContent">
+      <button onclick="openTestimonial()">המלצות</button>
+      <button onclick="openBox()">קצת עליי</button>
+  </div>
+</div>
+
        <h2 class="rtl">בס"ד</h2>
        <div class="word-wrapper">
         <h1 class="balloon-text">
@@ -56,10 +68,29 @@
 </h1>
        
          <h1 class="sec-title">חוגי דרמה ובמה • הפעלות לימי הולדת • מופע על הבמה</h1>
-         <h2 class="sec-title-1">חוויה של יצירה, צחוק ותנועה שמעצימה כל ילד</h1>
+         <h2 class="sec-title-1">חוויה של יצירה , צחוק ותנועה שמעצימה כל ילד !</h1>
     </div>
 
 
+  
+    <div class="overlay" id="overlay"></div>
+
+
+
+<div class="about-box" id="aboutBox">
+    <h2 class="hebrw">שמי יעקב(יעקוביקו) - שחקן, יוצר ומדריך דרמה וקרקס לגני ילדים.</h2>
+    <p class="hebrw ss">
+       במה, דמיון ומשחק הם הדרך שלי להתחבר לילדים ולעזור להם להרגיש חופשיים, מצחיקים, אמיצים ובעיקר — עצמם.
+
+כבר שנים שאני נכנס לגנים, צהרונים ומופעים ומגלה מחדש כמה ילדים מסוגלים לפרוח, רק צריך לתת להם במה קטנה, חיוך גדול וקצת קסמים של דמיון.
+אני מאמין שכל ילד יכול להיות כוכב — גם הביישן, גם המצחיקן וגם זה שעוד לא מצא את הקול שלו.
+החוגים והמופעים שלי משלבים תנועה, ביטוי אישי וצחוק — כדי לאפשר לילדים לצבור ביטחון, לשחרר אנרגיה ולגלות מי הם כשאף אחד לא שופט, רק מעודד.
+    </p>
+    <button class="close-btn" onclick="closeBox()">סגור</button>
+</div>
+<div class="overlay" id="overlayTest"></div>
+
+<div class="testimonial-modal" id="testModal">
     <div class="testimonial-carousel">
   <button class="prev-btn">&#10094;</button>
 
@@ -126,7 +157,8 @@
 
   <button class="next-btn">&#10095;</button>
 </div>
-
+ <button class="close-testimonial">סגור ✖</button>
+</div>
 
 
     <div class="dadCon">
@@ -160,7 +192,7 @@
 
 
     <a href="accessibility.html" class="accessibility-link">הצהרת נגישות</a>
-
+</div>
 <script src="index.js"></script>
 </body>
 </html>
