@@ -10,6 +10,10 @@ body {
     margin: auto;
     background-image: url(26.jpg);
     /* יישור הטקסט לימין */
+       background-repeat: no-repeat;     /* לא חוזר על עצמו */
+    background-size: cover;           /* מתוח לכל המסך */
+    background-attachment: fixed;     /* נשאר במקום כשגוללים */
+    background-position: center;      /* ממורכז */
 }
 .rtl{
     direction: rtl;
