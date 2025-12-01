@@ -736,7 +736,7 @@ a.a1:hover, a.a2:hover, a.a3:hover {
 @media (max-width: 480px) {
     body { width: 90%; }
     .balloon-text { font-size: 20vw;
-    margin-top: 80px; }
+    margin-top:150px; }
     .dadCon { flex-wrap: wrap; margin-top: 20px; margin-bottom: 20px; }
     .img1, .img2, .img3 { width: 150px; height: 150px; }
     .sec-title, .sec-title-1 { font-size: 6vw; }
@@ -762,6 +762,7 @@ a.a1:hover, a.a2:hover, a.a3:hover {
     margin: 0;
 color: rgb(174, 4, 4);
 text-align: center;
+
 
 }
 
