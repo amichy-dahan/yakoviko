@@ -34,6 +34,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 200px;
+    
 }
 .bloon{
     font-size: 70px;
@@ -450,6 +452,7 @@ text-align: center;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.25), 4px 4px 6px rgba(0,0,0,0.20), 6px 6px 12px rgba(0,0,0,0.15);
     margin: auto;
     text-align: center;
+    margin-top: 200px;
 }
 .end-t {
     font-size: 3vw;
@@ -460,6 +463,7 @@ text-align: center;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.25), 4px 4px 6px rgba(0,0,0,0.20), 6px 6px 12px rgba(0,0,0,0.15);
     margin: auto;
     text-align: center;
+    direction: rtl;
 }
 .details-drama{
     text-align: center;
@@ -736,7 +740,7 @@ a.a1:hover, a.a2:hover, a.a3:hover {
 @media (max-width: 480px) {
     body { width: 90%; }
     .balloon-text { font-size: 20vw;
-    margin-top:150px; }
+    margin-top:200px; }
     .dadCon { flex-wrap: wrap; margin-top: 20px; margin-bottom: 20px; }
     .img1, .img2, .img3 { width: 150px; height: 150px; }
     .sec-title, .sec-title-1 { font-size: 6vw; }
@@ -749,6 +753,10 @@ a.a1:hover, a.a2:hover, a.a3:hover {
         padding: 20px;            /* קצת פחות padding */
         height: 70vh;             /* גובה עד 80% מהמסך */
         overflow-y: auto;         /* גלילה אנכית אם המלל ארוך */
+    }
+      body {
+        background-size: cover;
+        background-position: 80% 30%; /* X% Y% – אפשר לשחק עד שהכי מתאים */
     }
     .balloon-text1 {
     
