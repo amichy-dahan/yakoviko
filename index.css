@@ -8,7 +8,7 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: auto;
-    background-image: url(26.jpg);
+    background-image: url(444.jpeg);
     /* יישור הטקסט לימין */
        background-repeat: no-repeat;     /* לא חוזר על עצמו */
     background-size: cover;           /* מתוח לכל המסך */
@@ -168,7 +168,7 @@ button.next-btn:hover {
 }
 
 .menu-btn {
-    background: #ff6a0e;
+    background:none;
     color: white;
     font-size: 1.2rem;
     border: none;
@@ -394,14 +394,31 @@ button.next-btn:hover {
     margin-top: 20px;
 }
 .balloon-text {
-    font-size: 10vw;
+    font-size: 11vw;
     font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background: linear-gradient(180deg, #ff0000 10%, #ff0101 60%, #ff0000 100%);
+    background: linear-gradient(180deg, #ff0000 100%, #ff0101 100%, #ff0000 100%);
     -webkit-background-clip: text;
     color: transparent;
-    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 8px 18px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
     margin: 0;
+color: rgb(174, 4, 4);
+text-align: center;
+margin-bottom: -7vw;
+
+}
+.balloon-text1 {
+    
+    font-size: 11vw;
+    font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #ff0000 100%, #ff0101 100%, #ff0000 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-size: 7vw;
+    margin-top: 50px;
+color: rgb(174, 4, 4);
+text-align: center;
 }
 .sec-title {
     font-size: 3vw;
@@ -468,15 +485,27 @@ a.a1:hover, a.a2:hover, a.a3:hover {
 .letter-wrapper {
     position: relative;
     display: inline-block;
+    direction: rtl;
+    margin-bottom: -200px;
+}
+
+.letter-wrapper1 {
+    position: relative;
+    display: inline-block;
+    direction: rtl;
+  
+    margin-top: -150px;
 }
 .letter-wrapper .ball, .letter-wrapper .ball2 {
     position: absolute;
     top: 0em;
-    left: 50%;
+    margin-right: -15px;
+    margin-top: -25px;
     transform: translateX(-50%);
-    width: 0.25em;
+    width: 0em;
+    font-size: 45px;
     background: rgb(113, 134, 230); ;
-    height: 0.25em;
+    height: 0.1em;
     border-radius: 50%;
     z-index: 2;
     box-shadow: 0 0 15px rgb(113, 134, 230);
@@ -706,7 +735,8 @@ a.a1:hover, a.a2:hover, a.a3:hover {
 /* מסכים קטנים מאוד */
 @media (max-width: 480px) {
     body { width: 90%; }
-    .balloon-text { font-size: 22vw; }
+    .balloon-text { font-size: 20vw;
+    margin-top: 80px; }
     .dadCon { flex-wrap: wrap; margin-top: 20px; margin-bottom: 20px; }
     .img1, .img2, .img3 { width: 150px; height: 150px; }
     .sec-title, .sec-title-1 { font-size: 6vw; }
@@ -720,6 +750,43 @@ a.a1:hover, a.a2:hover, a.a3:hover {
         height: 70vh;             /* גובה עד 80% מהמסך */
         overflow-y: auto;         /* גלילה אנכית אם המלל ארוך */
     }
+    .balloon-text1 {
+    
+    font-size: 13vw;
+    
+    font-family: "Playpen Sans Hebrew", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #ff0000 100%, #ff0101 100%, #ff0000 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+    margin: 0;
+color: rgb(174, 4, 4);
+text-align: center;
+
+}
+
+.letter-wrapper .ball, .letter-wrapper .ball2 {
+    position: absolute;
+    top: 0em;
+    margin-right: -11px;
+    margin-top: -18px;
+    transform: translateX(-50%);
+    width: 0em;
+    font-size: 25px;
+    background: rgb(113, 134, 230); ;
+    height: 0.1em;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 15px rgb(113, 134, 230);
+    animation: floatUp 1s ease-in-out infinite;
+}
+.letter-wrapper1 {
+    position: relative;
+    display: inline-block;
+    direction: rtl;
+    
+    margin-top: -150px;
+}
 
     .testimonial-carousel {
         flex-direction: column;   /* המלצות אחד מתחת לשני אם צריך */
