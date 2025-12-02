@@ -11,13 +11,12 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: auto;
-    background-image: url(444.jpeg);
+    background-image: url(101.jpeg);
     /* יישור הטקסט לימין */
        background-repeat: no-repeat;     /* לא חוזר על עצמו */
     background-size: cover;           /* מתוח לכל המסך */
     background-attachment: fixed;     /* נשאר במקום כשגוללים */
-    background-position: center;      /* ממורכז */
-}
+ background-position: 80% 55%;}
 .rtl{
     direction: rtl;
       font-family: 'GeveretLevin', sans-serif;
@@ -174,6 +173,15 @@ button.next-btn:hover {
     z-index: 3000;
 }
 
+.logo-img{
+       width: 45vw;
+       display: flex;
+       justify-content: center;
+         align-items: center;
+         margin-left: 20px;
+          margin-top: -80px;
+      }
+
 .menu-btn {
     background:none;
     color: white;
@@ -296,13 +304,10 @@ button.next-btn:hover {
     font-size: 3vw;
      font-family: 'GeveretLevin', sans-serif;
 
-    background: linear-gradient(180deg, #26ff04 10%, #23ad00 60%, #000000 100%);
+    background: linear-gradient(180deg, #007bff 10%, #007bff 60%, #ffffff 100%);
     -webkit-background-clip: text;
     color: transparent;
-    text-shadow:
-        2px 2px 3px rgba(0,0,0,0.25),
-        4px 4px 6px rgba(0,0,0,0.20),
-        6px 6px 12px rgba(0,0,0,0.15);
+   
     margin: 0;
     text-align: center;
     text-decoration: none;
@@ -367,7 +372,7 @@ button.next-btn:hover {
     font-size: 2.5vw;
     font-family: 'GeveretLevin', sans-serif;
     font-weight: normal;
-    background: linear-gradient(180deg, #000000 0%, #000000 50%, #002c42 100%);
+    background: linear-gradient(180deg, #ececec 0%, #f3eeee 50%, #f4fbff 100%);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 0px;
@@ -382,7 +387,7 @@ button.next-btn:hover {
 }
 .dadCon {
     display: flex;
-    margin-top: 40px;
+    margin-top: -80px;
     margin-bottom: 80px;
 }
 .img1, .img2, .img3 {
@@ -468,7 +473,7 @@ text-align: center;
 .title-drama {
     font-size: 5vw;
      font-family: 'GeveretLevin', sans-serif;
-
+    width: 100%;
     background: linear-gradient(180deg, #ff0000 10%, #ff0000 60%, #ff1100 100%);
     -webkit-background-clip: text;
     color: transparent;
@@ -495,9 +500,9 @@ text-align: center;
   font-family: 'GeveretLevin', sans-serif;
 
     font-size: 2rem;
-    color: rgba(17, 88, 1, 0.856);
-    text-shadow: 2px 2px 3px rgb(255, 255, 255);
-    font-weight: 900;
+    color: #98b0cb;
+
+
     line-height: 1.8;
     direction: rtl;
 }
@@ -767,7 +772,7 @@ a.a1:hover, a.a2:hover, a.a3:hover {
         pointer-events: auto;
         font-size: 20px;
  font-family: 'GeveretLevin', sans-serif;
-         color: #683400;
+         color: #dbdbdb;
         text-shadow: none;
         -webkit-text-stroke: 0;
     }
@@ -791,9 +796,26 @@ a.a1:hover, a.a2:hover, a.a3:hover {
         height: 70vh;             /* גובה עד 80% מהמסך */
         overflow-y: auto;         /* גלילה אנכית אם המלל ארוך */
     }
+    
       body {
         background-size: cover;
-        background-position: 80% 30%; /* X% Y% – אפשר לשחק עד שהכי מתאים */
+        background-position: 55% 50%; /* X% Y% – אפשר לשחק עד שהכי מתאים */
+         background-image: url(r.jpeg);
+    }
+       .box .img-text {
+        position: relative;
+        top: auto;
+        left: 19%;
+        transform: none;
+        opacity: 1;
+        margin-top: -10px;
+        text-align: center;
+        pointer-events: auto;
+        font-size: 20px;
+ font-family: 'GeveretLevin', sans-serif;
+         color: #dbdbdb;
+        text-shadow: none;
+        -webkit-text-stroke: 0;
     }
     .balloon-text1 {
     
@@ -888,6 +910,17 @@ text-align: center;
     font-size: 18vw;
     color:#007bff
 }
+
+.logo-img{
+       width: 80vw;
+       display: flex;
+       justify-content: center;
+         align-items: center;
+         margin-left: 20px;
+          margin-top: 30vw;
+          margin-bottom: -50px;
+      }
+
     
 }
 
